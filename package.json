@@ -1,0 +1,39 @@
+{
+  "name": "notion-backup",
+  "version": "1.3.1",
+  "description": "Notion exporter meant to be used as part of a GitHub workflow",
+  "main": "./notion-backup.js",
+  "bin": {
+    "notion-backup": "./notion-backup.js",
+    "notion-backup-item": "./notion-backup-item.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darobin/notion-backup.git"
+  },
+  "eslintConfig": {
+    "extends": "robin"
+  },
+  "author": "Robin Berjon <robin@berjon.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darobin/notion-backup/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/darobin/notion-backup",
+  "scripts": {
+    "start": "node notion-backup.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint-config-robin": "^6.1.3"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
+    "extract-zip": "^2.0.1",
+    "notion-client": "^4.5.2",
+    "notion-utils": "^4.5.2"
+  }
+}
